@@ -21,5 +21,9 @@ router.get('/projects', function(req, res, next) {
 router.get('/contact', function(req, res, next) {
   res.render('index', { title: 'Contact'});
 });
+/* GET music page. */
+router.get('/musiclist', function(req, res, next) {
+  res.render('index', { title: 'Musiclist'});
+});
 
 module.exports = router;
