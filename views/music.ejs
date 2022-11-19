@@ -16,21 +16,21 @@
             <br>
     <table class="table table-bordered table-striped table-hover">
     <tr>
-        <th class="text-center">Song</th>  
-        <th class="text-center">Artist</th>   
-        <th class="text-center">Year</th>   
-        <th class="text-center">Genre</th>   
-        <th class="text-center">Rating</th>   
+        <th class="text-center col-2">Song</th>  
+        <th class="text-center col-2">Artist</th>   
+        <th class="text-center col-1">Year</th>   
+        <th class="text-center col-2">Genre</th>   
+        <th class="text-center col-1">Rating</th>   
     </tr>
 
     <!--repeats the template-->
     <% for(let count=0; count<musiclist.length; count++) { %>
         <tr>
-            <td class="text-center"><%= musiclist[count].Song %></td>
-            <td class="text-center"><%= musiclist[count].Artist %></td>
-            <td class="text-center"><%= musiclist[count].Year %></td>
-            <td class="text-center"><%= musiclist[count].Genre %></td>
-            <td class="text-center"><%= musiclist[count].Rating %></td>
+            <td class="text-center col-2"><%= musiclist[count].Song %></td>
+            <td class="text-center col-2"><%= musiclist[count].Artist %></td>
+            <td class="text-center col-1"><%= musiclist[count].Year %></td>
+            <td class="text-center col-2"><%= musiclist[count].Genre %></td>
+            <td class="text-center col-1"><%= musiclist[count].Rating %></td>
         </tr>
     <%} %>
  </table>
