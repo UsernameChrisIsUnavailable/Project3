@@ -18,7 +18,10 @@ router.get('/', (req,res,next)=>{
         }
         else
         {
-            console.log(musiclist);
+            res.render('music',{
+                title:'music list', 
+                Musiclist: musiclist
+            })
         }
     })
 })
