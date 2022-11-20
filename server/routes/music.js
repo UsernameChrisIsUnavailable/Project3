@@ -11,7 +11,7 @@ let Music = require('../../models/music');
 /* get route for music list*/
 
 router.get('/', (req,res,next)=>{
-    Music.find((err, musiclist)=>{
+    Music.find((err, Musiclist)=>{
         if(err)
         {
             return console.error(err);
