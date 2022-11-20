@@ -30,13 +30,13 @@
                 <td class="text-center col-2"><%= Musiclist[count].Genre %></td>
                 <td class="text-center col-1"><%= Musiclist[count].Rating %></td>
                 <td class="text-center col-1">
-                    <a href="/music/edit/<%= Musiclist[count]._id %>"
-                        class="btn btn-primary"
+                    <a href="/musiclist/edit/<%= Musiclist[count]._id %>"
+                        class="btn btn-primary">
                         <i class="fas fa-pencil-alt"></i> Edit </a>
                 </td>
                 <td class="text-center col-1">
                     <a href="/musiclist/delete/<%= Musiclist[count]._id %>"
-                        class="btn btn-danger"
+                        class="btn btn-danger">
                         <i class="fas fa-trash-alt"></i> Delete </a>
                 </td>
             </tr>

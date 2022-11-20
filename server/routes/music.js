@@ -48,7 +48,7 @@ router.post('/add', (req,res,next)=>{
         }
         else
         {
-            res.redirect('/music/list');
+            res.redirect('/musiclist');
         }
     })
 });
@@ -100,7 +100,7 @@ router.post('/edit/:id', (req,res,next)=>{
 /*get to perform delete operation -- deletion*/
 router.get('/delete/:id', (req,res,next)=>{
     let id=req.params.id;
-    Music.remove({_id:id},(err)=>{
+    Music.deleteOne({_id:id},(err)=>{
         if(err)
         {
             console.log(err);
