@@ -90,7 +90,7 @@ router.post('/edit/:id', (req,res,next)=>{
         }
         else
         {
-            res.redirect('/music/list');
+            res.redirect('/musiclist');
         }
     })
 });
@@ -108,7 +108,7 @@ router.get('/delete/:id', (req,res,next)=>{
         }
         else
         {
-            res.redirect('/music/list');
+            res.redirect('/musiclist');
         }
     })
 });
