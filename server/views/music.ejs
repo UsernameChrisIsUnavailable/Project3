@@ -24,13 +24,13 @@
     </tr>
 
     <!--repeats the template-->
-    <% for(let count=0; count<musiclist.length; count++) { %>
+    <% for(let count=0; count<Musiclist.length; count++) { %>
         <tr class = "d-flex">
-            <td class="text-center col-2"><%= musiclist[count].Song %></td>
-            <td class="text-center col-2"><%= musiclist[count].Artist %></td>
-            <td class="text-center col-1"><%= musiclist[count].Year %></td>
-            <td class="text-center col-2"><%= musiclist[count].Genre %></td>
-            <td class="text-center col-1"><%= musiclist[count].Rating %></td>
+            <td class="text-center col-2"><%= Musiclist[count].Song %></td>
+            <td class="text-center col-2"><%= Musiclist[count].Artist %></td>
+            <td class="text-center col-1"><%= Musiclist[count].Year %></td>
+            <td class="text-center col-2"><%= Musiclist[count].Genre %></td>
+            <td class="text-center col-1"><%= Musiclist[count].Rating %></td>
         </tr>
     <%} %>
  </table>
@@ -41,9 +41,11 @@
 <%- include partials/bot_nav.ejs %>
   
     <!--these are the script files-->
+    <!--
     <script src = "config/app.js"></script>
     <script src = "config/db.js"></script>
     <script src = "/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src = "/jquery/dist/jquery.min.js"></script>
+    -->
 </body>
 </html>
