@@ -1,11 +1,11 @@
 let express = require('express');
 let router = express.Router();
 let mongoose = require('mongoose');
-const music = require('../../models/music');
+const music = require('../models/music');
 
 //connect with musicModel
 
-let Music = require('../../models/music');
+let Music = require('../models/music');
 
 /* read operation*/
 /* get route for music list*/
