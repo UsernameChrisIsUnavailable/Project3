@@ -20,7 +20,7 @@ router.get('/', (req,res,next)=>{
         {
             res.render('music',{
                 title:'music', 
-                Musiclist: musiclist
+                Musiclist: Musiclist
             })
         }
     })
