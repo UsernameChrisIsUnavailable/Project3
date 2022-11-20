@@ -18,7 +18,7 @@ router.get('/', (req,res,next)=>{
         }
         else
         {
-            res.render('music',{
+            res.render('music/list',{
                 title:'music', 
                 Musiclist: Musiclist
             })
@@ -29,29 +29,46 @@ router.get('/', (req,res,next)=>{
 /*add operation*/
 /*get route for displaying the add-page -- create operation*/
 router.get('/add', (req,res,next)=>{
-
+    res.render('music/add',{title:'Add Song'})
 });
 /*post route for processing the add page -- part of create operation*/
 router.post('/add', (req,res,next)=>{
-
+    let newSong = Music ({
+        "Song":req.body.Song,
+        "Artist":req.body.Artist,
+        "Year":req.body.Year,
+        "Genre":req.body.Genre,
+        "Rating":req.body.Rating
+    })
+    Music.create(newSong,(err,Music) =>{
+        if(err)
+        {
+            console.log(err);
+            res.end(err);
+        }
+        else
+        {
+            res.redirect('/music/list');
+        }
+    })
 });
 
 
 
 /*edit operation*/
 /*get route for displaying the edit operation -- update operation*/
-router.get('/edit', (req,res,next)=>{
-
+router.get('/edit/:id', (req,res,next)=>{
+    
 });
 /*post route for displaying the edit operation -- part of create operation*/
-router.post('/edit', (req,res,next)=>{
+router.post('/edit/:id', (req,res,next)=>{
 
 });
 
 
 /*delete operation*/
 /*get to perform delete operation -- deletion*/
-router.get('/add', (req,res,next)=>{
+router.get('/delete/:id', (req,res,next)=>{
 
 });
 
