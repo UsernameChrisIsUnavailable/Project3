@@ -2,39 +2,32 @@
 <%- include partials/top_nav.ejs %>
 <!--Main content-->
 <main>
-            <div class="jumbotron">
-            <h1 class="display-4"><p>Welcome to Chris' <%= title %> page!</p></h1>
-            
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-            </div>
-
-
-<div class ="container">
-    <div class="row">
-        <div class="col-md-offset-3 col-md-6">
-            <h1><%= title %></h1>
-            <br>
-    <table class="table table-bordered table-striped table-hover">
-    <tr>
-        <th class="text-center col-2">Song</th>  
-        <th class="text-center col-2">Artist</th>   
-        <th class="text-center col-1">Year</th>   
-        <th class="text-center col-2">Genre</th>   
-        <th class="text-center col-1">Rating</th>   
-    </tr>
-
-    <!--repeats the template-->
-    <% for(let count=0; count<Musiclist.length; count++) { %>
-        <tr class = "d-flex">
-            <td class="text-center col-2"><%= Musiclist[count].Song %></td>
-            <td class="text-center col-2"><%= Musiclist[count].Artist %></td>
-            <td class="text-center col-1"><%= Musiclist[count].Year %></td>
-            <td class="text-center col-2"><%= Musiclist[count].Genre %></td>
-            <td class="text-center col-1"><%= Musiclist[count].Rating %></td>
+    <div class ="container">
+        <div class="row">
+            <div class="col-md-offset-3 col-md-6">
+                <h1><%= title %></h1>
+                <br>
+        <table class="table table-bordered table-striped table-hover">
+        <tr>
+            <th class="text-center col-2">Song</th>  
+            <th class="text-center col-2">Artist</th>   
+            <th class="text-center col-1">Year</th>   
+            <th class="text-center col-2">Genre</th>   
+            <th class="text-center col-1">Rating</th>   
         </tr>
-    <%} %>
- </table>
-</div>
+
+        <!--repeats the template-->
+        <% for(let count=0; count<Musiclist.length; count++) { %>
+            <tr class = "d-flex">
+                <td class="text-center col-2"><%= Musiclist[count].Song %></td>
+                <td class="text-center col-2"><%= Musiclist[count].Artist %></td>
+                <td class="text-center col-1"><%= Musiclist[count].Year %></td>
+                <td class="text-center col-2"><%= Musiclist[count].Genre %></td>
+                <td class="text-center col-1"><%= Musiclist[count].Rating %></td>
+            </tr>
+        <%} %>
+    </table>
+    </div>
 
 </main>
 
