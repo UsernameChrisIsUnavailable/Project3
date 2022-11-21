@@ -1,16 +1,8 @@
 @charset "UTF-8";
 
 body {
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fcecfc+0,fba6e1+54,fba6e1+56,fd89d7+56,fd89d7+56,fd89d7+56,fba6e1+56,fba6e1+56,fba6e1+56,fba6e1+56,fd89d7+60,fd89d7+60,fd89d7+63,fd89d7+63,ff7cd8+100 */
-   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#febbbb+0,fe9090+45,ff5c5c+100;Red+3D+%231 */
-background: #febbbb; /* Old browsers */
-background: -moz-linear-gradient(top,  #febbbb 0%, #fe9090 45%, #ff5c5c 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #febbbb 0%,#fe9090 45%,#ff5c5c 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #febbbb 0%,#fe9090 45%,#ff5c5c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#febbbb', endColorstr='#ff5c5c',GradientType=0 ); /* IE6-9 */
 
-    /*^copied from colorzilla*/
-    background-color: lightcyan;
+    background-color:  #febbbb;
     font-family: Cambria, Perpetua, Garamond;
     padding: 0px;
     margin: 0px;
