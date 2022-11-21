@@ -1,18 +1,10 @@
 @charset "UTF-8";
 
 body {
-
-    background-color:  #febbbb;
+    
+    background: #febbbb; 
+    background-color: lightcyan;
     font-family: Cambria, Perpetua, Garamond;
     padding: 0px;
     margin: 0px;
-}
-
-#wrapper {
-    width: 960px;
-    height: 1800px;
-    overflow: auto;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: lightcoral;
 }
